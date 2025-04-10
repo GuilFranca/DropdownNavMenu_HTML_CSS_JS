@@ -15,6 +15,7 @@ nav {
     width: 100%;
     height: 70px;
     background-color: #3e8da8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 nav .navbar {
@@ -32,6 +33,8 @@ nav .navbar .logo a{
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
+    height: 100%;
+    line-height: 70px;
 }
 
 nav .navbar .nav-links {
@@ -53,11 +56,66 @@ nav .navbar .nav-links .links li {
 }
 
 nav .navbar .nav-links .links li a {
+    height: 100%;
     color: #fff;
     text-decoration: none;
     white-space: nowrap;
+    /* background-color: red; */
 }
 
 nav .navbar .nav-links .links li .arrow {
-    color: red;
+    /* background-color: red; */
+    color: #fff;
+    height: 100%;
+    line-height: 70px;
+    width: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li:hover .htmlcss-arrow,
+.navbar .nav-links .links li:hover .js-arrow {
+    transform: rotate(180deg)
+}
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #3e8da8;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a{
+    font-size: 15px;
+    font: 500;
+}
+
+.navbar .nav-links .links .sub-menu li .more-arrow{
+    line-height: 40px;
+}
+
+.navbar .nav-links .links li:hover .htmlCss-sub-menu,
+.navbar .nav-links .links li:hover .js-sub-menu {
+    display: block;
+}
+
+.navbar .nav-links .links .sub-menu .more:hover .more-sub-menu {
+    display: block;
+}
+
+.navbar .nav-links .links .sub-menu .more .more-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    display: none;
 }
