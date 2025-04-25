@@ -18,13 +18,24 @@ searchBox.addEventListener('click', () => {
 let menuOpenBtn = document.querySelector('.navbar .bx-menu');
 let closeOpenBtn = document.querySelector('.nav-links .bx-x');
 let navLinks = document.querySelector('.nav-links');
+let logo = document.querySelector('.logo');
 
 menuOpenBtn.addEventListener("click", ()=>{
     navLinks.style.left = "0";
+
+    // if(innerWidth <= 800 && innerWidth > 370){
+    //     logo.style.display = 'none';
+    // }
+
 })
 
 closeOpenBtn.addEventListener("click", ()=>{
     navLinks.style.left = "-100%";
+
+    // if(innerWidth <= 800 && innerWidth > 370){
+    //     logo.style.display = 'block';
+    // }
+
 })
 
 // sidebar submenu

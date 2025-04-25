@@ -127,6 +127,7 @@ nav .navbar .nav-links .links li .arrow {
 }
 
 .navbar .search-box {
+    cursor: pointer;
     position: relative;
     height: 40px;
     width: 40px;
@@ -222,14 +223,15 @@ nav .navbar .nav-links .links li .arrow {
         display: block;
         position: fixed;
         top: 0;
-        /* left: -100%; */
-        left: 0;
+        left: -100%;
+        /* left: 0; */
         max-width: 270px;
         width: 100%;
         background-color: #3e8da8;
         padding: 20px;
         line-height: 40px;
         transition: all 0.5s ease;
+        z-index: 100;
     }
 
     nav .navbar .nav-links .sidebar-logo {
@@ -299,8 +301,30 @@ nav .navbar .nav-links .links li .arrow {
         display: block;
     }
 
+    .navbar .nav-links.show2 .links .sub-menu .more-arrow {
+        /* transform: rotate(180deg); */
+        transform: rotate(90deg);
+    }
+
     .navbar .nav-links.show3 .links .sub-menu.js-sub-menu {
         display: block;
+    }
+
+    .navbar .nav-links.show1 .links li .htmlcss-arrow,
+    .navbar .nav-links.show3 .links li .js-arrow {
+        transform: rotate(180deg)
+    }
+
+    .js-arrow, .htmlcss-arrow, .more-arrow {
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 370px) {
+        
+    nav .navbar .nav-links {
+        max-width: 100%;
     }
 
 }
