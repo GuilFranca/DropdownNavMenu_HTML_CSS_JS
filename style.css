@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* Tira o contorno azul dos cliques no mobile */
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav {
@@ -258,7 +260,7 @@ nav .navbar .nav-links .links li .arrow {
     nav .navbar .nav-links .links li {
         display: block;
     }
-    
+
     .navbar .nav-links .links .sub-menu {
         display: none;
         position: relative;
@@ -276,7 +278,7 @@ nav .navbar .nav-links .links li .arrow {
         display: none;
     }
 
-    .navbar .nav-links .links .more:hover .more-sub-menu{
+    .navbar .nav-links .links .more:hover .more-sub-menu {
         display: none;
     }
 
@@ -293,7 +295,7 @@ nav .navbar .nav-links .links li .arrow {
         display: block;
     }
 
-    .navbar .nav-links.show2 .links .more .more-sub-menu{
+    .navbar .nav-links.show2 .links .more .more-sub-menu {
         position: relative;
         top: 0;
         left: 0;
@@ -322,7 +324,7 @@ nav .navbar .nav-links .links li .arrow {
 }
 
 @media (max-width: 370px) {
-        
+
     nav .navbar .nav-links {
         max-width: 100%;
     }
